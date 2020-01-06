@@ -121,7 +121,7 @@ const ConsentManagerExample = (props: { closeBehavior: CloseBehavior | CloseBeha
           </Button>
           <Button
             onClick={() => {
-              cookies.remove('tracking-preferences')
+              cookies.remove('bb-tracking-preferences')
               window.location.reload()
             }}
           >

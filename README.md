@@ -197,7 +197,7 @@ Whether or not consent should be implied if the user interacts with the website 
 Type: `string`<br>
 Default: the [top most domain][top-domain] and all sub domains
 
-The domain the `tracking-preferences` cookie should be scoped to.
+The domain the `bb-tracking-preferences` cookie should be scoped to.
 
 ##### bannerContent
 
@@ -367,7 +367,7 @@ Callback function allows you to use a custom preferences format (e.g: categories
 Type: `string`<br>
 Default: the [top most domain][top-domain] and all sub domains
 
-The domain the `tracking-preferences` cookie should be scoped to.
+The domain the `bb-tracking-preferences` cookie should be scoped to.
 
 #### Render Props
 

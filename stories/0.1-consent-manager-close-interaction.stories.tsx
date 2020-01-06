@@ -101,7 +101,7 @@ const ConsentManagerExample = () => {
           <Heading>to see the banner again:</Heading>
           <Button
             onClick={() => {
-              cookies.remove('tracking-preferences')
+              cookies.remove('bb-tracking-preferences')
               window.location.reload()
             }}
           >

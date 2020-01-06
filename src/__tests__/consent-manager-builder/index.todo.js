@@ -58,7 +58,7 @@ describe('ConsentManagerBuilder', () => {
 
   test('provides a list of newly added destinations', done => {
     document.cookie =
-      'tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
+      'bb-tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
     window.analytics = { load() {} }
 
     nock('https://cdn.segment.com')
@@ -92,7 +92,7 @@ describe('ConsentManagerBuilder', () => {
   test('loads analytics.js with the user՚s preferences', done => {
     const ajsLoad = sinon.spy()
     document.cookie =
-      'tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
+      'bb-tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
     window.analytics = { load: ajsLoad }
     const writeKey = '123'
 
@@ -125,7 +125,7 @@ describe('ConsentManagerBuilder', () => {
 
   test('provides an object containing the WIP preferences', done => {
     document.cookie =
-      'tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
+      'bb-tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}}'
     window.analytics = { load() {} }
 
     nock('https://cdn.segment.com')

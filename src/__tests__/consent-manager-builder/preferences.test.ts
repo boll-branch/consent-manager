@@ -23,7 +23,7 @@ describe('preferences', () => {
 
   test('loadPreferences() returns preferences when cookie exists', () => {
     document.cookie =
-      'tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}%2C%22custom%22:{%22functional%22:true}}'
+      'bb-tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}%2C%22custom%22:{%22functional%22:true}}'
 
     expect(loadPreferences()).toMatchObject({
       destinationPreferences: {
@@ -63,7 +63,7 @@ describe('preferences', () => {
 
     expect(
       document.cookie.includes(
-        'tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}%2C%22custom%22:{%22functional%22:true}}'
+        'bb-tracking-preferences={%22version%22:1%2C%22destinations%22:{%22Amplitude%22:true}%2C%22custom%22:{%22functional%22:true}}'
       )
     ).toBe(true)
   })
