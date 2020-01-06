@@ -4,7 +4,7 @@ import topDomain from '@segment/top-domain'
 import { WindowWithAJS, Preferences, CategoryPreferences } from '../types'
 import { EventEmitter } from 'events'
 
-const COOKIE_KEY = ' bb-tracking-preferences'
+const COOKIE_KEY = 'bb-tracking-preferences'
 // TODO: Make cookie expiration configurable
 const COOKIE_EXPIRES = 365
 
