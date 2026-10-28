@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - emotion > babel-plugin-emotion > @babel/helper-module-imports > lodash:
+        patched: '2026-10-28T02:23:38.562Z'
+        id: SNYK-JS-LODASH-567746
+        path: emotion > babel-plugin-emotion > @babel/helper-module-imports > lodash
+    - emotion > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2026-10-28T02:23:38.562Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          emotion > babel-plugin-emotion > @babel/helper-module-imports >
+          @babel/types > lodash
