@@ -31,7 +31,9 @@
     "deploy-storybook": "storybook-to-ghpages",
     "standalone-hash": "shasum -b -a 256 standalone/consent-manager.js | xxd -r -p | base64",
     "build-storybook": "yarn build-standalone && build-storybook && cp -r ./standalone ./storybook-static/standalone",
-    "lint": "eslint 'src/**/*.{ts,tsx}'"
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@segment/in-regions": "^1.2.0",
@@ -42,7 +44,8 @@
     "lodash": "^4.17.11",
     "nanoid": "^1.0.2",
     "prop-types": "^15.6.1",
-    "react-emotion": "^9.1.2"
+    "react-emotion": "^9.1.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -142,5 +145,6 @@
     "gitUsername": "GitHub Pages Bot",
     "gitEmail": "friends@segment.com",
     "commitMessage": "Deploy Storybook to GitHub Pages [skip ci]"
-  }
+  },
+  "snyk": true
 }

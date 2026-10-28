@@ -1281,6 +1281,11 @@
   dependencies:
     samsam "1.3.0"
 
+"@snyk/protect@^1.1308.3":
+  version "1.1308.3"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1308.3.tgz#d35dfbbadc6ce5aac4c51081660c20732d54c09c"
+  integrity sha512-AiNVAHTJMJlZGuhScIUz4JX8lxw98gY0/5D6UkUp1rgwc0tOATmmEbPFSnVmApl/pCaQlPr0jpMjCfxniccGeQ==
+
 "@storybook/addon-actions@^5.2.3":
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.3.tgz#40675f1258428074eebd363e5f9468adeec79046"
